@@ -1,0 +1,20 @@
+ 1065  vi  /alt/work/tts/tacotron2/T
+ 1066  cd /alt/work/tts/tacotron2/T
+ 1067  cd /alt/work/tts/tacotron2/
+ 1068  ls -alt |  head 
+ 1069  tail history.txt 
+ 1070  vi TTS/tts/configs/config.littleminds.json 
+ 1071  screen -ls
+ 1072  screen -r 20373.run_gta 
+ 1073  module load cuda11.1/toolkit
+ 1074  export LD_LIBRARY_PATH=/alt/mt/software/anaconda3/lib/:${LD_LIBRARY_PATH}
+ 1075  conda activate /alt/mt/software/anaconda3/envs/taco2-moz
+ 1076  cd /alt/work/tts/tacotron2
+ 1077  python TTS/bin/train_tacotron.py --config_path TTS/tts/configs/config.littleminds.json 
+ 1078  module load cuda10.1/toolkit/10.1.243
+ 1079  python TTS/bin/train_tacotron.py --config_path TTS/tts/configs/config.littleminds.json 
+ 1080* vi TTS/tts/configs/config.littleminds.json §
+ 1081* python TTS/bin/train_tacotron.py --config_path TTS/tts/configs/config.littleminds.json [A
+ 1082  export LD_LIBRARY_PATH=/alt/mt/software/anaconda3/lib/:${LD_LIBRARY_PATH}
+ 1083  history | tail -20 
+ 1084  history | tail -20 > Commands.txt 

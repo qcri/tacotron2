@@ -1,0 +1,759 @@
+    1  cd POS/
+    2  ls
+    3  cd atb/
+    4  ls
+    5  cd ..
+    6  find . -name *base-multilingual-cased*
+    7  cd data/OFF/
+    8  ls
+    9  ls -all 
+   10  exit
+   11  cd /alt/work/tts/data/littlethinkingminds_20201127/cleanP/wav 
+   12  ls
+   13  cd ..
+   14  cd /alt/work/tts/WaveRNN/
+   15  ls -all 
+   16  cd model
+   17  cd model_outputs/
+   18  ls
+   19  ls -alt 
+   20  cd ltmCleanC_mol.wavernn
+   21  ls
+   22  ls -alt | head 
+   23  ls /alt/work/tts/WaveRNN/
+   24  ls -alt | head 
+   25  more /alt/work/tts/WaveRNN/hparams_littlethinkingmindsCleanC.py 
+   26  cp /alt/work/tts/WaveRNN/hparams_littlethinkingmindsCleanC.py /alt/work/tts/WaveRNN/hparams_littlethinkingmindsClean22kraw.py
+   27  vi /alt/work/tts/WaveRNN/hparams_littlethinkingmindsClean22kraw.py 
+   28  pwd
+   29  cd /alt/work/tts/WaveRNN 
+   30  ls
+   31  cd utils/
+   32  ls
+   33  vi text/
+   34  cd text/
+   35  ls
+   36  vi symbols.py 
+   37  vi __init__.py 
+   38  ls
+   39  vi cleaners.py 
+   40  vi __init__.py 
+   41  vi cleaners.py 
+   42  cd ..
+   43  ls
+   44  cd /alt/work/tts/
+   45  ls
+   46  cd data/
+   47  ls
+   48  cd littlethinkingminds_20201127/
+   49  ls
+   50  cp -r cleanC cleanC22k
+   51  mv cleanC22k cleanC22k9
+   52  mkdir cleanC22k
+   53  cd cleanC22k
+   54  cp -r  /home/local/QCRI/cdemiroglu/tmp2/cleanN/wav/* . 
+   55  ls -alt | head 
+   56  mkdir wav
+   57  mv * wav/
+   58  ls
+   59  cd wav/
+   60  ls
+   61  more littlethinkingminds_20201127.small.csv 
+   62  cd ..
+   63  rm -rf cleanC22k9
+   64  ls -alt | head 
+   65  tail -f res_gpu_WaveRNN_ltmCleanN.txt 
+   66  tail -f res_gpu_WaveRNN_ltmCleanS.txt 
+   67  cd /alt/work/tts/data/littlethinkingminds_20201127/cleanC
+   68  ls
+   69  cd wav/
+   70  ls
+   71  cat littlethinkingminds_20201127.csv | perl -pe 's/(.)/\1\n/g;' | more 
+   72  cat littlethinkingminds_20201127.csv | cut -f2 -d'|' |  perl -pe 's/(.)/\1\n/g;' | 
+   73  cat littlethinkingminds_20201127.csv | cut -f2 -d'\|' |  perl -pe 's/(.)/\1\n/g;' | 
+   74  cat littlethinkingminds_20201127.csv |  perl -pe 's/(.)/\1\n/g;' | 
+   75  cat littlethinkingminds_20201127.csv | cut -f2 -d'\|' |  perl -pe 's/(.)/\1\n/g;' | more 
+   76  cat littlethinkingminds_20201127.csv |  perl -pe 's/(.)/\1\n/g;' | more 
+   77  cat littlethinkingminds_20201127.csv |  perl -pe 's/(.)/\1\n/g;' | sort -u 
+   78  cd //alt/work/tts/WaveRNN/
+   79  ls
+   80  vi hparams_littlethinkingmindsClean22kraw.py 
+   81  pwd
+   82  ls
+   83  cd /alt/work/tts/data/littlethinkingminds_20201127/cleanC
+   84  ls
+   85  cd wav/
+   86  LS
+   87  ls
+   88  vi littlethinkingminds_20201127.csv 
+   89  cd ..
+   90  ls
+   91  cd cleanN/
+   92  ls
+   93  cd wav/
+   94  vi littlethinkingminds_20201127.small.nopunct.csv 
+   95  cd /alt/work/tts/data/littlethinkingminds_20201127/cleanC22k/wav
+   96  cd /alt/work/tts/data/littlethinkingminds_20201127/cleanC22k/
+   97  ls
+   98  soxi 03_18_12.wav 
+   99  cd wav/
+  100  more littlethinkingminds_20201127.small.csv 
+  101  less littlethinkingminds_20201127.small.csv 
+  102  dos2unix littlethinkingminds_20201127.small.csv > littlethinkingminds_20201127.small.csv121
+  103  ls -all  | head 
+  104  ls -all  | tail 
+  105  rm littlethinkingminds_20201127.small.csv121 
+  106  dos2unix < littlethinkingminds_20201127.small.csv > littlethinkingminds_20201127.small.csv121
+  107  ls -all | tail 
+  108  grep -IUr --color "^M" littlethinkingminds_20201127.small.csv
+  109  grep -IUr --color "" littlethinkingminds_20201127.small.csv
+  110  grep -IUr --color "" littlethinkingminds_20201127.small.csv* 
+  111  ls littlethinkingminds_20201127.small.csv* 
+  112  rm littlethinkingminds_20201127.small.csv121 
+  113  ls
+  114  ls -all 
+  115  grep -IUr --color "" littlethinkingminds_20201127.small.csv* 
+  116  dos2unix < littlethinkingminds_20201127.small.csv > littlethinkingminds_20201127.small.csv121
+  117  ls -all littlethinkingminds_20201127.small.csv* 
+  118  mv littlethinkingminds_20201127.small.csv121 littlethinkingminds_20201127.small.csv 
+  119  ls -all 
+  120  grep -IUr --color "" littlethinkingminds_20201127.small.csv* 
+  121  cd /alt/work/tts
+  122  ls
+  123  cd WaveRNN/
+  124  ls
+  125  cp run_WaveRNN_train_wavernn_ltmCleanC.sh run_WaveRNN_train_wavernn_ltmCleanC22kraw.sh
+  126  vi run_WaveRNN_train_wavernn_ltmCleanC22kraw.sh 
+  127  cd 
+  128  sbatch --output=res_gpu_WaveRNN_ltmCleanC22kraw.txt --job-name=TOCSLTM slurm_gpu1_cmd_wrnn.sh  run_WaveRNN_train_wavernn_ltmCleanC22kraw.sh
+  129  tail -f res_gpu_WaveRNN_ltmCleanC22kraw.txt 
+  130  sbatch --output=res_gpu_WaveRNN_ltmCleanC22kraw.txt --job-name=TOCSLTM slurm_gpu1_cmd_wrnn.sh /alt/work/tts/WaveRNN/run_WaveRNN_train_wavernn_ltmCleanC22kraw.sh
+  131  tail -f res_gpu_WaveRNN_ltmCleanC22kraw.txt 
+  132  ls -alt 
+  133  ls -alt  | head 
+  134  more res_gpu_WaveRNN_ltmCleanN.txt 
+  135  tail -f res_gpu_WaveRNN_ltmCleanC22kraw.txt 
+  136  more /alt/mt/work/durrani/Neuron_Analysis/PretrainedLM/M_BERT-base_cased/chunking/extractEmbeddings-hdf5-Arabic.sh 
+  137  srun --gres gpu:1 --pty bash
+  138  screen -S run_NadirNeuroX
+  139  more /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt.bert-base-multilingual-cased.Nadir.hdf5.log 
+  140  more /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt.qarib_bert-base-qarib.Nadir.hdf5.log 
+  141  more /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt.aubmindlab-bert-base-arabert.Nadir.hdf5.log 
+  142  vi /alt/mt/work/durrani/Neuron_Analysis/StaticEmbeddings/extraction/extract_representations-hdf5.py 
+  143  cd /alt/common/data/abdelali/NeuroX/
+  144  ls
+  145  cd aux_classifier/
+  146  ls
+  147  vi extract_representations-hdf5.py 
+  148  grep qarib *.py 
+  149  cd aux_classifier/
+  150  grep qarib *.py 
+  151  cd ..
+  152  tail -f /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt.aubmindlab-bert-base-arabert.Nadir.hdf5.log 
+  153  tail -f /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt.qarib_bert-base-qarib.Nadir.hdf5.log 
+  154  tail -f ../data/POS/atb/train.pos.txt.qarib_bert-base-qarib.hdf5.log 
+  155  module load cuda10.1/toolkit
+  156  grep load *sh
+  157  module load python36
+  158  module load cuda10.1/toolkit/10.1.243
+  159  conda env list 
+  160  conda activate neurox-env 
+  161  python /alt/mt/work/durrani/Neuron_Analysis/StaticEmbeddings/extraction/extract_representations-hdf5.py --output-type hdf5 --aggregation last bert-base-multilingual-cased /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt.bert-base-multilingual-cased.Nadir.hdf5
+  162  python /alt/mt/work/durrani/Neuron_Analysis/StaticEmbeddings/extraction/extract_representations-hdf5.py --output-type hdf5 --aggregation last bert-base-multilingual-cased /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt.bert-base-multilingual-cased.Nadir.hdf5 > /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt.bert-base-multilingual-cased.Nadir.hdf5.log
+  163  python /alt/mt/work/durrani/Neuron_Analysis/StaticEmbeddings/extraction/extract_representations-hdf5.py --output-type hdf5 --aggregation last qarib/bert-base-qarib /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt.qarib_bert-base-qarib.Nadir.hdf5 > /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt.qarib_bert-base-qarib.Nadir.hdf5.log 
+  164  python /alt/mt/work/durrani/Neuron_Analysis/StaticEmbeddings/extraction/extract_representations-hdf5.py --output-type hdf5 --aggregaon last aubmindlab/bert-base-arabert /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt.aubmindlab-bert-base-arabert.Nadir.hdf5 > 
+  165  python /alt/mt/work/durrani/Neuron_Analysis/StaticEmbeddings/extraction/extract_representations-hdf5.py --output-type hdf5 --aggregation last aubmindlab/bert-base-arabert /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt.aubmindlab-bert-base-arabert.Nadir.hdf5 > /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt.aubmindlab-bert-base-arabert.Nadir.hdf5.log 
+  166  python /alt/common/data/abdelali/NeuroX/aux_classifier/extract_representations-hdf5.py --output-type hdf5 --aggregation last aubmindlab/bert-base-arabert /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt.aubmindlab-bert-base-arabert.Nadir.hdf5 > /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt.aubmindlab-bert-base-arabert.Nadir.hdf5.log 
+  167  python /alt/common/data/abdelali/NeuroX/aux_classifier/extract_representations-hdf5.py  --output-type hdf5 --aggregation last qarib/bert-base-qarib /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt.qarib_bert-base-qarib.Nadir.hdf5 > /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt.qarib_bert-base-qarib.Nadir.hdf5.log 
+  168  python /alt/common/data/abdelali/NeuroX/aux_classifier/extract_representations-hdf5.py  --output-type hdf5 --aggregation last --model_name qarib/bert-base-qarib --input_corpus /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt --output_file /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt.qarib_bert-base-qarib.Nadir.hdf5 > /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt.qarib_bert-base-qarib.Nadir.hdf5.log 
+  169  python /alt/common/data/abdelali/NeuroX/aux_classifier/extract_representations-hdf5.py  --output-type hdf5 --aggregation last qarib/bert-base-qarib /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt.qarib_bert-base-qarib.Nadir.hdf5 > /alt/common/data/abdelali/NeuroX/data/POS/atb/train.pos.txt.qarib_bert-base-qarib.Nadir.hdf5.log 
+  170  cd /alt/common/data/abdelali/NeuroX/
+  171  python aux_classifier/extraction.py --output-type hdf5 --aggregation last qarib/bert-base-qarib ../data/POS/atb/train.pos.txt ../data/POS/atb/train.pos.txt.qarib_bert-base-qarib.hdf5  > ../data/POS/atb/train.pos.txt.qarib_bert-base-qarib.hdf5.log 
+  172  cd aux_classifier/
+  173  python aux_classifier/extraction.py --output-type hdf5 --aggregation last qarib/bert-base-qarib ../data/POS/atb/train.pos.txt ../data/POS/atb/train.pos.txt.qarib_bert-base-qarib.hdf5  > ../data/POS/atb/train.pos.txt.qarib_bert-base-qarib.hdf5.log 
+  174  python aux_classifier/extraction.py --output-type hdf5 --aggregation average aubmindlab/bert-base-arabert ../data/POS/atb/train.pos.txt1k ../data/POS/atb/train.pos.txt1k.aubmindlab-bert-base-arabert.hdf5 >../data/POS/atb/train.pos.txt1k.aubmindlab-bert-base-arabert.hdf5.log
+  175  ifconfig 
+  176  jupyter notebook --ip=10.4.64.10 --no_browser
+  177  jupyter notebook --ip=10.141.0.8 --no_browser
+  178  jupyter notebook --ip=10.141.0.8 
+  179  ifconfig 
+  180  jupyter notebook --ip=10.2.8.116 --no-browser
+  181  module avail 
+  182  exit
+  183  srun --gres gpu:1 --pty bash
+  184  exit
+  185  ls *.sh 
+  186  more slurm_gpu1_neurox-env.sh 
+  187  cp slurm_gpu1_neurox-env.sh slurm_gpu1_neurox-extraction.sh
+  188  vi slurm_gpu1_neurox-extraction.sh 
+  189  screen -ls
+  190  screen -r 26962.run_NadirNeuroX 
+  191  exit
+  192  ls *.sh 
+  193  more slurm_cpu_cmd_neurox-env.sh 
+  194  module load python36
+  195  which conda
+  196  #module load cuda10.1/toolkit/10.1.243
+  197  conda activate neurox-env
+  198  cd /alt/common/data/abdelali/NeuroX/aux_classifier
+  199  vi run_dev_extraction.sh
+  200  chmod +x run_dev_extraction.sh 
+  201  ./run_dev_extraction.sh 
+  202  ls
+  203  exit
+  204  srun --gres gpu:1 --pty bash
+  205  exit
+  206  screen -S run_NadirNeuroX 
+  207  exit
+  208  cd /alt/common/data/abdelali/NeuroX/data/POS/atb/ 
+  209  ls
+  210  head -2000 train.pos.txt > train.pos.txt2k
+  211  head -3000 train.pos.txt  > train.pos.txt3k
+  212  head -2000 train.pos.txt.label  > train.pos.txt2k.label
+  213  head -3000 train.pos.txt.label > train.pos.txt3k.label 
+  214  for model in qarib/bert-base-qarib bert-base-multilingual-cased aubmindlab/bert-base-arabert asafaya/bert-base-arabic; do echo $model; model2=`echo $model | sed 's/\//-/g;'`; done 
+  215  for model in qarib/bert-base-qarib bert-base-multilingual-cased aubmindlab/bert-base-arabert asafaya/bert-base-arabic; do echo $model; model2=`echo $model | sed 's/\//-/g;'`; echo $model2; done 
+  216  cd ../
+  217  cd aux_classifier/
+  218  vi aux_classifier/extraction.py 
+  219  cd /alt/common/data/abdelali/NeuroX/data/POS/atb 
+  220  grep -E '_bert|Overall:' ../../../aux_classifier/log_txt*
+  221  grep -E 'bert|Overall:' ../../../aux_classifier/log_txt*
+  222  grep -E 'bert|Overall:' ../../../aux_classifier/log_txt* | grep -v Loading 
+  223  ls *3k*qarib* 
+  224  ls
+  225  ls dev*qarib* 
+  226  mv dev.pos.txt.qarib_bert-base-qarib.hdf5 dev.pos.txt.qarib-bert-base-qarib.hdf5
+  227  mv dev.pos.txt.qarib_bert-base-qarib.hdf5.log dev.pos.txt.qarib-bert-base-qarib.hdf5.log
+  228  ls -all train.pos.txt3k.qarib-bert-base-qarib.hdf5 
+  229  ls -all train.pos.txt?k.qarib-bert-base-qarib.hdf5 
+  230  grep -E 'bert|Overall:' ../../../aux_classifier/log_txt* | grep -v Loading 
+  231  ls *5k*
+  232  ls *5k
+  233  head -5000 train.pos.txt > train.pos.txt5k
+  234  head -5000 train.pos.txt.label > train.pos.txt5k.label 
+  235  screen -ls
+  236  ls 
+  237  cd /alt/common/data/abdelali/NeuroX/aux_classifier/
+  238  ls
+  239  cd aux_classifier/
+  240  vi extraction.py 
+  241  cd ..
+  242  cd data/
+  243  ls
+  244  cd POS/atb/
+  245  ls
+  246  wc test.pos.txt 
+  247  head -1000 train.pos.txt > train.pos.txt1k
+  248  head -1000 train.pos.txt.label > train.pos.txt1k.label
+  249  tail -f train.pos.txt1k.qarib_bert-base-qarib.hdf5.log 
+  250  wc train.pos.txt1k.qarib_bert-base-qarib.hdf5.log 
+  251  tail train.pos.txt1k.qarib_bert-base-qarib.hdf5.log 
+  252  tail train.pos.txt1k 
+  253  ls -alkh *hdf5
+  254  wc dev.pos.txt
+  255  screen -ls
+  256  screem -r 32902.run_neurox_exp 
+  257  screen -ls
+  258  screen -r 21094.run_jupyter 
+  259  screen -ls
+  260  exit
+  261  screen -ls
+  262  screen -r 46239.run_neurox 
+  263  exit
+  264  screen -ls
+  265  screen -r 32902.run_neurox_exp 
+  266  ls -alt | head 
+  267  tail -f res_gpu_WaveRNN_ltmCleanC22kraw.txt 
+  268  screen -ls
+  269  screen -r 48571.TTS 
+  270  screen -ls
+  271  screen -r 48571.TTS 
+  272  cd /alt/work/tts/WaveRNN 
+  273  ls
+  274  cd model_outputs/
+  275  ls
+  276  cd ltmCleanC22k_lsa_smooth_attention.tacotron 
+  277  l
+  278  ls
+  279  ls -all 
+  280  date
+  281  cd ..
+  282  ls
+  283  cd ltmCleanC22k_raw.wavernn/
+  284  ls
+  285  ls -alt | head 
+  286  ls -alt | more 
+  287  cd ..
+  288  ls
+  289  cd ltmCleanC_lsa_smooth_attention.tacotron 
+  290  ls
+  291  ls -alt 
+  292  cd ..
+  293  ls
+  294  cd ltmCleanN_lsa_smooth_attention.tacotron 
+  295  ls
+  296  cd ../ltmCleanN_mol.wavernn/
+  297  ls
+  298  cd ..
+  299  ls -alt 
+  300  cd ltmCleanC22k_raw.wavernn 
+  301  ls
+  302  ls -alt | head 
+  303  cd ..
+  304  ls
+  305  screen -ls
+  306  screen -r 32902.run_neurox_exp 
+  307  cd /alt/common/data/abdelali/NeuroX/aux_classifier
+  308  ls
+  309  more log_txt5k.txt 
+  310  more log_txt5k.tx
+  311  more log_txt3k.txt 
+  312  cd ../data/POS/atb/
+  313  head -4000 train.pos.txt > train.pos.txt4k 
+  314  head -4000 train.pos.txt.label > train.pos.txt4k.label 
+  315  head -3500 train.pos.txt > train.pos.txt3.5k
+  316  head -3500 train.pos.txt.label > train.pos.txt3.5k.label
+  317  head train.pos.txt 
+  318  cat train.pos.txt4k | awk '{print NF}' | tail -1000 | more 
+  319  cat train.pos.txt4k | awk '{print NF}' | tail -1000 | cat -n | more 
+  320  cat train.pos.txt4k | awk '{print NF}' | tail -1000 | cat -n | sort -nrk2 | more 
+  321  cat train.pos.txt4k | awk '{print NF}' | cat -n | sort -nrk2 | more 
+  322  cat train.pos.txt | awk '{print NF}' | cat -n | sort -nrk2 | more 
+  323  pwd
+  324  ls
+  325  paste  train.pos.txt train.pos.txt.label | python ../../../aux_classifier/filter_file.py | cut -f1 > train.pos.txt.filtered 
+  326  paste  train.pos.txt train.pos.txt.label | python ../../../aux_classifier/filter_file.py | cut -f2 > train.pos.txt.filtered.label
+  327  wc train.pos.txt.filtered* 
+  328  wc train.pos.txt.filtered* train.pos.txt 
+  329  head -5000 train.pos.txt.filtered > train.pos.txt.filtered.5k
+  330  head -5000 train.pos.txt.filtered.label > train.pos.txt.filtered.5k.label
+  331  head -10000 train.pos.txt.filtered > train.pos.txt.filtered.10k
+  332  head -10000 train.pos.txt.filtered.label > train.pos.txt.filtered.10k.label
+  333  screen -ls
+  334  screen -r 48571.TTS 
+  335  screen -d 48571.TTS 
+  336  screen -r 48571.TTS 
+  337  cd /alt/work/tts/WaveRNN/model_outputs
+  338  ls -alt 
+  339  cd ltmCleanC22k_lsa_smooth_attention.tacotron 
+  340  ls
+  341  ls -all 
+  342  ls
+  343  cd /alt/common/data/abdelali/AraBert/
+  344  cd evals/UBC/
+  345  ls
+  346  cd AJGT/
+  347  ls
+  348  cd AJGT_MARBERT_bert_ckpt/
+  349  ls
+  350  head  AJGT_MARBERT_report_sorted.tsv 
+  351  pwd
+  352  cd ..
+  353  ls
+  354  cd ..
+  355  ls
+  356  cd QADI
+  357  ls
+  358  head  */*report_sorted.tsv
+  359  ls
+  360  cd ../Off/
+  361  ls
+  362  head  */*report_sorted.tsv
+  363  cd /alt/common/data/abdelali/AraBert/evals/UBC/Off
+  364  ls
+  365  cd ..
+  366  ls
+  367  more download_data_models.sh 
+  368  cd ..
+  369  ls
+  370  cd UBC/
+  371  ls
+  372  git clone https://huggingface.co/aubmindlab/bert-base-arabert
+  373  git lfs
+  374  git lfs install 
+  375  df -kh
+  376  cd 
+  377  ls *sh 
+  378  more slurm_gpu1_finetunepytorch.sh 
+  379  exit
+  380  more slurm_gpu1_cmd_wrnn.sh 
+  381  module load python36
+  382  module load cuda10.1/toolkit/10.1.243
+  383  conda activate /alt/mt/software/anaconda3/envs/WaveRNN
+  384  cd /alt/work/tts/WaveRNN
+  385  export LD_LIBRARY_PATH=/alt/mt/software/anaconda3/lib/:${LD_LIBRARY_PATH}
+  386  CUDA_VISIBLE_DEVICES='0' python train_tacotron.py --hp_file hparams_littlethinkingmindsClean22kraw.py --force_gta 
+  387  CUDA_VISIBLE_DEVICES='0' python train_wavernn.py --hp_file hparams_littlethinkingmindsClean22kraw.py --gta
+  388  ls -alt *sh 
+  389  vi run_WaveRNN_train_wavernn_ltmCleanC22kraw.sh 
+  390  exit
+  391  for model in bert-base-arabert bert-base-arabic bert-base-multilingual-cased MARBERT_pytorch_verison QARiB_dataall_10M; do  sbatch --output=res_gpu_arabert_finetunepytorch_QADI_$model.txt --job-name=QADI_$model slurm_gpu1_finetunepytorch.sh QADI_QARIB QADI/ train.tsv test.tsv models/$model tweets label 30; done 
+  392  sq
+  393  ls -alt | head
+  394  tail -f res_gpu_arabert_finetunepytorch_QADI_bert-base-multilingual-cased.txt 
+  395  sq
+  396  tail -f res_gpu_arabert_finetunepytorch_QADI_bert-base-multilingual-cased.txt 
+  397  more slurm_gpu1_finetunepytorch.sh 
+  398  module avail  
+  399  ls /alt/mt/software/anaconda3/lib
+  400  module load cuda10.1/toolkit/10.1.243
+  401  module load python36
+  402  ldd 
+  403  more tensorflow/stream_executor/platform/default/dso_loader.cc
+  404  ls -alt | head -20 
+  405  tail res_gpu_WaveRNN_ltmCleanC22kraw.txt 
+  406  tail -30 res_gpu_WaveRNN_ltmCleanC22kraw.txt 
+  407  screen -ls
+  408  screen -r 28711.run_WaveRNNGTA 
+  409  screen -r 32902.run_neurox_exp 
+  410  cd /alt/work/tts/WaveRNN 
+  411  exit 
+  412  cd /alt/common/data/abdelali/NeuroX/
+  413  cd aux_classifier/
+  414  ls
+  415  ls -alt 
+  416  more log_txt.txt 
+  417  screen -ls
+  418  screen -r 32902.run_neurox_exp 
+  419  exit
+  420  module load python36
+  421  ls -alt *.sh
+  422  more slurm_gpu1_finetunepytorch.sh 
+  423  module load cuda11.0/toolkit
+  424  export LD_LIBRARY_PATH=/alt/mt/software/anaconda3/lib/:${LD_LIBRARY_PATH}
+  425  cd /alt/common/data/abdelali/AraBert/evals/UBC
+  426  more cd /alt/common/data/abdelali/AraBert/evals/UBC
+  427  more ~/slurm_gpu1_finetunepytorch.sh 
+  428  python fine_tune_marbert_from_checkpoint.py --task_name bert-base-multilingual-cased QADI/ train.tsv test.tsv models/bert-base-multilingual-cased  tweets label 30 
+  429  python fine_tune_marbert_from_checkpoint.py --task_name bert-base-multilingual-cased --data_dir QADI/ --train_file train.tsv --dev_file test.tsv --pretrained_model_path models/bert-base-multilingual-cased  --content_col tweets --label_col label --epochs 30 
+  430  source ~/activate_conda_panther.src
+  431  conda activate pytorch_finetune
+  432  python fine_tune_marbert_from_checkpoint.py --task_name bert-base-multilingual-cased --data_dir QADI/ --train_file train.tsv --dev_file test.tsv --pretrained_model_path models/bert-base-multilingual-cased  --content_col tweets --label_col label --epochs 30 
+  433  exit
+  434  cd /alt/work/tts/WaveRNN/model_outputs/
+  435  ls -alt 
+  436  cd ltmCleanC22k_raw.wavernn 
+  437  ls
+  438  ls -alt | head 
+  439  cd ..
+  440  ls
+  441  cd ..
+  442  ls
+  443  cd checkpoints/
+  444  ls
+  445  ls -alt 
+  446  cd ltmCleanC22k_raw.wavernn 
+  447  ls
+  448  more log.txt 
+  449  tail log.txt 
+  450  cd ..
+  451  ls
+  452  cd ltmCleanC22k_lsa_smooth_attention.tacotron 
+  453  ls -alt 
+  454  cd attention
+  455  ls
+  456  ls -all 
+  457  ls
+  458  cd /alt/common/data/abdelali/NeuroX/data/POS/atb
+  459  ls -alt | head -20 
+  460  pwd
+  461  lcd 
+  462  cd ..
+  463  ls
+  464  cd Chunking/
+  465  ks
+  466  ls
+  467  cat eng_chunking_train.conll | more 
+  468  cat eng_chunking_train.conll | awk '{print NF}' | cat -n | sort -nrk2 | more 
+  469  tail -f /alt/common/data/abdelali/NeuroX/aux_classifier/log_txt.txt 
+  470  cd ../
+  471  cd POS/
+  472  cd atb/
+  473  ls
+  474  paste  train.pos.txt train.pos.txt.label | python ../../../aux_classifier/filter_file.py | cut -f2 > train.pos.txt.filtered.label 
+  475  paste  train.pos.txt train.pos.txt.label | python ../../../aux_classifier/filter_file.py | cut -f1 > train.pos.txt.filtered 
+  476  cd ../
+  477  cd ..
+  478  cd aux_classifier/
+  479  tail -f log_txt.txt 
+  480  git status 
+  481  rm End\ to\ End\ Example\ POS-mBERT.ipynb aux_classifier/extraction.py 
+  482  git pull 
+  483  more aux_classifier/extraction.py 
+  484  rm log_txt.txt 
+  485  tail -f log_txt.txt 
+  486  cd /export/alt/data/abdelali/AraBert/evals/UBC/
+  487  ls -all 
+  488  cd QADI/
+  489  ls
+  490  ls -all 
+  491  cd ..
+  492  ls
+  493  cd models/
+  494  ls
+  495  cd bert-base-arabert/
+  496  ls
+  497  cd ..
+  498  cd QADI/
+  499  ls
+  500  ls -all 
+  501  cd /export/alt/data/abdelali/AraBert/evals/UBC/QADI 
+  502  ls
+  503  cd QADI_bert-base-multilingual-cased_bert_ckpt 
+  504  ls
+  505  ls -all 
+  506  cd ..
+  507  ls
+  508  cd ../QADI_SPLIT/
+  509  ;s
+  510  ls
+  511  ls -all 
+  512  cd ..
+  513  cd QADI_SPLIT/
+  514  ls
+  515  cd QADISP_MARBERT_pytorch_verison_bert_ckpt
+  516  ls
+  517  ls -all 
+  518  ls -alt ~/*.txt | heda 
+  519  ls -alt ~/*.txt | head
+  520  tail -f /home/local/QCRI/aabdelali/res_gpu_arabert_finetunepytorch_QADISP_bert-base-arabert.txt 
+  521  pwd
+  522  ls
+  523  cd /alt/work/tts/WaveRNN/checkpoints/ltmCleanC22k_lsa_smooth_attention.tacotron/attention 
+  524  ls
+  525  ls -alt | head 
+  526  cd ..
+  527  cd /alt/work/tts/
+  528  ls
+  529  cd data/
+  530  ls
+  531  cd littlethinkingminds_20201127/
+  532  ls
+  533  mkdir cleanDDCenk
+  534  cd cleanDDCenk/
+  535  cp -r ../cleanC22k/* . 
+  536  cd ..
+  537  cp -r cleanS cleanS22k
+  538  rm -rf *
+  539  rm -rf cleanS22k/* 
+  540  ls -alt | head 
+  541  cp -r cleanC22k/* cleanS22k 
+  542  ls
+  543  mv cleanS22k cleanC22kNotilda
+  544  mv cleanDDCenk cleanC22Cenk
+  545  cd cleanC22Cenk
+  546  ls
+  547  rm -rf gta mel quant dataset.pkl  text_dict.pkl 
+  548  cd wac
+  549  cd wav/
+  550  cp /home/local/QCRI/cdemiroglu/exp/20210117-tacotron2/littlethinkingminds_20210126.csv . 
+  551  ls
+  552  wc littlethinkingminds_202* 
+  553  mv littlethinkingminds_20201127.small.csv 
+  554  ls
+  555  rm littlethinkingminds_20201127.small.csv 
+  556  la
+  557  ls
+  558  cd ../
+  559  cd ..
+  560  cd cleanC22kNotilda/
+  561  ls
+  562  rm -rf dataset.pkl  gta  mel  quant  text_dict.pkl 
+  563  cd wav/
+  564  ls
+  565  vi littlethinkingminds_20201127.small.csv
+  566  cd ../
+  567  cd. .
+  568  lcd ..
+  569  cd .. 
+  570  ls 
+  571  cd cleanC22Cenk 
+  572  pwd
+  573  cd /alt/work/tts/data/littlethinkingminds_20201127/cleanC22kNotilda
+  574  cd wav/
+  575  ls
+  576  cat littlethinkingminds_20201127.small.csv  | perl -pe 's/~//g;' | more 
+  577  cat littlethinkingminds_20201127.small.csv  | perl -pe 's/~//g;' > littlethinkingminds_20201127.notilda.csv
+  578  rm littlethinkingminds_20201127.small.csv 
+  579  ls
+  580  cd ..
+  581  ls 
+  582  vi /alt/work/tts/WaveRNN/run_WaveRNN_train_wavernn_ltmcleanC22kNotilda.sh 
+  583  exit
+  584  cd /alt/common/data/abdelali/NeuroX/aux_classifier
+  585  cd ../data/POS/atb/
+  586  ls
+  587  grep 'اصابة واحدة' train.pos.txt 
+  588  grep -n 'اصابة واحدة' train.pos.txt.filtered 
+  589  wc -l train.pos.txt train.pos.txt.filtered 
+  590  cd /alt/common/data/abdelali/NeuroX/aux_classifier 
+  591  ls
+  592  more log_txt.txt 
+  593  vi aux_classifier/extraction.py 
+  594  rm log_txt.txt 
+  595  tail -f log_txt.txt 
+  596  cd /alt/common/data/abdelali/NeuroX/aux_classifier 
+  597  tail -f log_txt.txt 
+  598  more log_txt.txt 
+  599  paste  dev.pos.txt dev.pos.txt.label | python ../../../aux_classifier/filter_file.py | cut -f1 > dev.pos.txt.filtered
+  600  paste  dev.pos.txt dev.pos.txt.label | python ../../../aux_classifier/filter_file.py | cut -f2 > dev.pos.txt.filtered.label
+  601  rm log_txt.txt 
+  602  cd 
+  603  ls *sh 
+  604  more slurm_gpu1_neurox-env.sh 
+  605  tail -f /alt/common/data/abdelali/NeuroX/aux_classifier/log_txt.txt 
+  606  exit
+  607  sq 
+  608  scontrol show job 4282492 
+  609  more /alt/work/tts/WaveRNN/run_WaveRNN_train_wavernn_ltmCleanC22kraw.sh 
+  610  cp /alt/work/tts/WaveRNN/run_WaveRNN_train_wavernn_ltmCleanC22kraw.sh /alt/work/tts/WaveRNN/run_WaveRNN_train_wavernn_ltmCleanC22krawtoco.sh
+  611  vi /alt/work/tts/WaveRNN/run_WaveRNN_train_wavernn_ltmCleanC22krawtoco.sh 
+  612  pwd
+  613  sq
+  614  scontrol show job 4282492 
+  615  sbatch --output=res_gpu_WaveRNN_ltmCleanC-taco.txt --job-name=TACC22kLTM slurm_gpu1_cmd_wrnn.sh /alt/work/tts/WaveRNN/run_WaveRNN_train_wavernn_ltmCleanC22krawtoco.sh
+  616  sq
+  617  screen -ls
+  618  screen -r 28711.run_WaveRNNGTA 
+  619  ls /alt/work/tts/WaveRNN/run_WaveRNN_train_wavernn_ltmclean*sh
+  620  vi /alt/work/tts/WaveRNN/run_WaveRNN_train_wavernn_ltmcleanC22Cenk.sh 
+  621  sbatch --output=res_gpu_WaveRNN_ltmC22kNotilda.txt --job-name=C22kNotilda slurm_gpu1_cmd_wrnn.sh /alt/work/tts/WaveRNN/run_WaveRNN_train_wavernn_ltmcleanC22kNotilda.sh
+  622  sbatch --output=res_gpu_WaveRNN_ltmC22Cenk.txt --job-name=C22Cenk slurm_gpu1_cmd_wrnn.sh /alt/work/tts/WaveRNN/run_WaveRNN_train_wavernn_ltmcleanC22Cenk.sh
+  623  sq
+  624  for model in qarib/bert-base-qarib bert-base-multilingual-cased aubmindlab/bert-base-arabert asafaya/bert-base-arabic; do echo $model; model2=`echo $model | sed 's/\//-/g;'`; echo $model2;  sbatch --output=res_aux_classifier_eval_$model2_POS.txt --job-name=eval$model2 slurm_gpu1_neurox-eval_extraction.sh $model2  train.pos.txt.filtered dev.pos.txt.filtered /alt/common/data/abdelali/NeuroX/data/POS/atb; done 
+  625  sq
+  626  ls -alt | head 
+  627  ls -alt 
+  628  ls -alt  | head 
+  629  sq
+  630  more res_aux_classifier_eval_.txt 
+  631  scancel 4283887 4283888 4283889 4283890 
+  632  sq
+  633  for model in qarib/bert-base-qarib bert-base-multilingual-cased aubmindlab/bert-base-arabert asafaya/bert-base-arabic; do echo $model; modela=`echo $model | sed 's/\//-/g;'`; echo $modela;  sbatch --output=res_aux_classifier_eval_$modela.POS.txt --job-name=eval$modela slurm_gpu1_neurox-eval_extraction.sh $modela  train.pos.txt.filtered dev.pos.txt.filtered /alt/common/data/abdelali/NeuroX/data/POS/atb; done 
+  634  sq
+  635  ls -alt | head 
+  636  tail -f res_aux_classifier_eval_aubmindlab-bert-base-arabert.POS.txt 
+  637  s
+  638  sq
+  639  ls -alt | head 
+  640  tail -f res_gpu_arabert_finetunepytorch_QADI_MARBERT_pytorch_verison.txt 
+  641  scontrol show job 4282483 
+  642  more res_gpu_arabert_finetunepytorch_QADI_MARBERT_pytorch_verison.txt 
+  643  ls /alt/common/data/abdelali/AraBert/
+  644  pushd /alt/common/data/abdelali/AraBert/
+  645  cd evals/UBC/
+  646  ls
+  647  cd QADI/
+  648  ls
+  649  ls -all 
+  650  cd ..
+  651  ls
+  652  cd UBC/
+  653  ls
+  654  more fine_tune_marbert_from_checkpoint.py 
+  655  ls -alt ~/*.txt | head 
+  656  more /home/local/QCRI/aabdelali/res_gpu_arabert_finetunepytorch_QADI_bert-base-multilingual-cased.txt 
+  657  cd 
+  658  ls *.sh 
+  659  more slurm_gpu1_finetunepytorch.sh 
+  660  vi slurm_gpu1_finetunepytorch.sh 
+  661  module avail 
+  662  screen -ls
+  663  screen -S run_finetunepytorch
+  664  screen -ls
+  665  screen -S run_NeuroX 
+  666  screen -ls 
+  667  screen -r 21907.run_NeuroX 
+  668  cd /alt/common/data/abdelali/NeuroX/data/POS/atb 
+  669  cat dev.pos.txt | awk '{print NF}' | sort | sort -nrk1 | more 
+  670  paste  dev.pos.txt dev.pos.txt.label | python ../../../aux_classifier/filter_file.py | cut -f1 > dev.pos.txt.filtered
+  671  paste  dev.pos.txt dev.pos.txt.label | python ../../../aux_classifier/filter_file.py | cut -f2 > dev.pos.txt.filtered.label
+  672  wc dev.pos.txt dev.pos.txt.filtered
+  673  pushd ~/
+  674  ls *sh 
+  675  more slurm_gpu1_neurox-extraction.sh 
+  676  cp slurm_gpu1_neurox-extraction.sh slurm_gpu1_neurox-eval_extraction.sh
+  677  vi slurm_gpu1_neurox-eval_extraction.sh 
+  678  more slurm_gpu1_neurox-eval_extraction.sh 
+  679  cd /alt/work/tts/WaveRNN/checkpoints/ltmcleanC22kNotilda_lsa_smooth_attention.tacotron 
+  680  ls
+  681  cd attention/
+  682  ls
+  683  ls -alt | head 
+  684  pwd
+  685  cd ../
+  686  cd ..
+  687  ls
+  688  cd ltmcleanC22Cenk_lsa_smooth_attention.tacotron
+  689  ls
+  690  cd attention/
+  691  ls
+  692  ls -alt | head 
+  693  cd ../
+  694  cd mel_plots/
+  695  ls
+  696  cd ../
+  697  cd ..
+  698  ls
+  699  cd ..
+  700  cd model_outputs/
+  701  ls
+  702  exit
+  703  cd /alt/work/tts/WaveRNN/
+  704  ls
+  705  cd model_outputs 
+  706  ls
+  707  cd ltmcleanC22kNotilda_lsa_smooth_attention.tacotron 
+  708  ls
+  709  cd ../
+  710  cd ltmcleanC22kNotilda_raw.wavernn 
+  711  ls
+  712  cd ../
+  713  cd ..
+  714  ls
+  715  cd checkpoints/
+  716  ls
+  717  cd ltmcleanC22kNotilda_lsa_smooth_attention.tacotron 
+  718  ls
+  719  cd /alt/work/tts/WaveRNN
+  720  cd ..
+  721  mkdir tacotron2
+  722  cd tacotron2
+  723  cp -r /home/local/QCRI/cdemiroglu/git/TTS/* . 
+  724  exit
+  725  cd 
+  726  ls *sh 
+  727  more slurm_gpu1_cmd_wrnn.sh 
+  728  ule load python36
+  729  module load cuda10.1/toolkit/10.1.243
+  730  conda activate taco2-moz 
+  731  ls -alt *.sh | head
+  732  more slurm_gpu1_neurox-eval_extraction.sh 
+  733  ls -alt *.sh | head
+  734  more slurm_gpu1_neurox-extraction.sh 
+  735  ls *.py 
+  736  python test_gpu.py 
+  737  python 
+  738  module avail 
+  739  module load cuda11.1/toolkit 
+  740  ls *.py 
+  741  python test_gpu.py  
+  742  ls *.sh 
+  743  more slurm_gpu1_neurox-eval_extraction.sh 
+  744  grep CUDA *.sh 
+  745  CUDA_VISIBLE_DEVICES='0' python test_gpu.py 
+  746  pip list | grep numba
+  747  cd /alt/work/tts/tacotron2/
+  748  ls
+  749  python TTS/bin/train_tacotron.py --config_path TTS/tts/configs/config.littleminds.json  
+  750  vi TTS/tts/configs/config.littleminds.json 
+  751  python TTS/bin/train_tacotron.py --config_path TTS/tts/configs/config.littleminds.json --logdir /alt/work/tts/tacotron2/log_littleminds/
+  752  vi TTS/tts/configs/config.littleminds.json 
+  753  python TTS/bin/train_tacotron.py --config_path TTS/tts/configs/config.littleminds.json 
+  754  vi TTS/tts/configs/config.littleminds.json 
+  755  python TTS/bin/train_tacotron.py --config_path TTS/tts/configs/config.littleminds.json [A
+  756  vi TTS/tts/configs/config.littleminds.json 
+(taco2-moz) aabdelali@crimv3mgpu004:/alt/work/tts/tacotron2$ vi TTS/tts/configs/config.littleminds.json
+  
+757  history  > history.txt 

@@ -1,0 +1,25 @@
+Metadata-Version: 1.2
+Name: TTS
+Version: 0.0.8+907cb98
+Summary: Text to Speech with Deep Learning
+Home-page: https://github.com/mozilla/TTS
+Author: Eren Gölge
+Author-email: egolge@mozilla.com
+License: MPL-2.0
+Project-URL: Documentation, https://github.com/mozilla/TTS/wiki
+Project-URL: Tracker, https://github.com/mozilla/TTS/issues
+Project-URL: Repository, https://github.com/mozilla/TTS
+Project-URL: Discussions, https://discourse.mozilla.org/c/tts
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research :: Developers
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Topic :: Software Development :: Libraries :: Python Modules :: Speech :: Sound/Audio :: Multimedia :: Artificial Intelligence
+Requires-Python: >=3.6.0
